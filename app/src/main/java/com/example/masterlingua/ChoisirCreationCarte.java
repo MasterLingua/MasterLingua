@@ -13,14 +13,14 @@ public class ChoisirCreationCarte extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_creer_carte);
+        setContentView(R.layout.activity_bouton_creation_carte);
         this.goCreerCarte = findViewById(R.id.goCreerCarte);
 
         goCreerCarte.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                Intent secondActivity = new Intent(getApplicationContext(), CreerCarte.class);
-                startActivity(secondActivity);
+                Intent creerCarte = new Intent(getApplicationContext(), CreerCarte.class);
+                startActivity(creerCarte);
                 finish();
             }
         });

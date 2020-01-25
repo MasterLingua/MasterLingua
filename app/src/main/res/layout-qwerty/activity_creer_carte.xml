@@ -5,12 +5,19 @@
     android:layout_height="match_parent"
     tools:ignore="MissingDefaultResource">
 
+    <ImageView
+        android:id="@+id/quiz"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:src="@drawable/quiz"></ImageView>
+
     <TextView
         android:id="@+id/creationCarte"
         android:layout_width="wrap_content"
         android:layout_height="55dp"
         android:layout_centerHorizontal="true"
         android:text="@string/page_creation_card"
+        android:layout_below="@+id/quiz"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"></TextView>
 
     <TextView
@@ -60,13 +67,15 @@
             android:layout_height="wrap_content"
             android:id="@+id/radio_true1"
             android:text="@string/vrai"
-            android:onClick="onRadioButtonClicked"></RadioButton>
+            android:onClick="onRadioButtonClicked"
+            android:checked="false"></RadioButton>
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/radio_false1"
             android:text="@string/faux"
-            android:onClick="onRadioButtonClicked"></RadioButton>
+            android:onClick="onRadioButtonClicked"
+            android:checked="true"></RadioButton>
     </RadioGroup>
 
     <EditText
@@ -89,13 +98,15 @@
             android:layout_height="wrap_content"
             android:id="@+id/radio_true2"
             android:text="@string/vrai"
-            android:onClick="onRadioButtonClicked"></RadioButton>
+            android:onClick="onRadioButtonClicked"
+            android:checked="false"></RadioButton>
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/radio_false2"
             android:text="@string/faux"
-            android:onClick="onRadioButtonClicked"></RadioButton>
+            android:onClick="onRadioButtonClicked"
+            android:checked="true"></RadioButton>
     </RadioGroup>
 
     <EditText
@@ -118,13 +129,15 @@
             android:layout_height="wrap_content"
             android:id="@+id/radio_true3"
             android:text="@string/vrai"
-            android:onClick="onRadioButtonClicked"></RadioButton>
+            android:onClick="onRadioButtonClicked"
+            android:checked="false"></RadioButton>
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/radio_false3"
             android:text="@string/faux"
-            android:onClick="onRadioButtonClicked"></RadioButton>
+            android:onClick="onRadioButtonClicked"
+            android:checked="true"></RadioButton>
     </RadioGroup>
 
     <Button

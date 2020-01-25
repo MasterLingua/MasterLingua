@@ -37,9 +37,9 @@ public class Carte {
         return question;
     }
 
-  /*  public String getReponse(){
-
-    }*/
+    public Map<String, Boolean> getReponse(){
+        return reponses;
+    }
 
 
 }
