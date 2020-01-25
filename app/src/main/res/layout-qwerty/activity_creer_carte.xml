@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="MissingDefaultResource">
+
+    <TextView
+        android:id="@+id/creationCarte"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/page_creation_card"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"></TextView>
+
+    <TextView
+        android:id="@+id/poserQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_question"
+        android:layout_below="@+id/creationCarte"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"></TextView>
+
+    <EditText
+        android:id="@+id/question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textAutoCorrect"
+        android:visibility="visible"
+        android:layout_below="@+id/poserQuestion"
+        android:autofillHints="username"></EditText>
+
+
+
+    <TextView
+        android:id="@+id/ajouterReponse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add_answer"
+        android:layout_below="@+id/question"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"></TextView>
+
+    <EditText
+        android:id="@+id/answer1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textAutoCorrect"
+        android:visibility="visible"
+        android:layout_below="@+id/ajouterReponse"
+        android:autofillHints="username"></EditText>
+
+    <RadioGroup
+        android:id="@+id/rbanswer1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/answer1"
+        android:orientation="horizontal">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radio_true1"
+            android:text="@string/vrai"
+            android:onClick="onRadioButtonClicked"></RadioButton>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radio_false1"
+            android:text="@string/faux"
+            android:onClick="onRadioButtonClicked"></RadioButton>
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/answer2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textAutoCorrect"
+        android:visibility="visible"
+        android:layout_below="@+id/rbanswer1"
+        android:autofillHints="username"></EditText>
+
+    <RadioGroup
+        android:id="@+id/rbanswer2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/answer2"
+        android:orientation="horizontal">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radio_true2"
+            android:text="@string/vrai"
+            android:onClick="onRadioButtonClicked"></RadioButton>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radio_false2"
+            android:text="@string/faux"
+            android:onClick="onRadioButtonClicked"></RadioButton>
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/answer3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textAutoCorrect"
+        android:visibility="visible"
+        android:layout_below="@+id/rbanswer2"
+        android:autofillHints="username"></EditText>
+
+    <RadioGroup
+        android:id="@+id/rbanswer3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/answer3"
+        android:orientation="horizontal">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radio_true3"
+            android:text="@string/vrai"
+            android:onClick="onRadioButtonClicked"></RadioButton>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radio_false3"
+            android:text="@string/faux"
+            android:onClick="onRadioButtonClicked"></RadioButton>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/validate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rbanswer3"
+        android:text="@string/terminate" />
+
+</RelativeLayout>
