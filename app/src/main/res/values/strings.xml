@@ -8,4 +8,5 @@
     <string name="faux">Incorrect</string> // du coup en français ici aussi
     <string name="terminate">Valider la carte</string>
     <string name="warning_question">La question est obligatoire pour valider</string>
+    <string name="card_created">Votre carte a bien été créée</string>
 </resources>
