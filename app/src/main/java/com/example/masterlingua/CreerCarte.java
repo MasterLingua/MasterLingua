@@ -52,12 +52,10 @@ public class CreerCarte extends AppCompatActivity {
                     if(!answer1.getText().toString().isEmpty()){ // champ de réponse 1
                         answers.add(answer1.getText().toString());
                         if(rbanswer1.getCheckedRadioButtonId() == R.id.radio_true1) b1 = true;
-                        System.out.println(b1);
                     }
                     if(!answer2.getText().toString().isEmpty()){ // champ de réponse 2
                         answers.add(answer2.getText().toString());
                         if(rbanswer2.getCheckedRadioButtonId() == R.id.radio_true2) b2 = true;
-                        System.out.println(b2);
                     }
                     if(!answer3.getText().toString().isEmpty()){ // champ de réponse 3
                         answers.add(answer3.getText().toString());
@@ -70,15 +68,17 @@ public class CreerCarte extends AppCompatActivity {
                     // construire la carte avec le bon nombre de réponses en argument
                     CharSequence text = getText(R.string.card_created);
                     int duration = Toast.LENGTH_SHORT;
-                    if (answers.size() == 2) {
+                    System.out.println(answers.size());
+                    if (answers.size() == 3) {
                         carte = new Carte(question.getText().toString(), answers.get(0), b1, answers.get(1), b2, answers.get(2), b3);
                         Toast.makeText(context, text, duration).show();
+                        answers.removeAll(ArrayList<>());
                     }
-                    if (answers.size() == 1) {
+                    if (answers.size() == 2) {
                         carte = new Carte(question.getText().toString(), answers.get(0), b1, answers.get(1), b2);
                         Toast.makeText(context, text, duration).show();
                     }
-                    if (answers.size() == 0) {
+                    if (answers.size() == 1) {
                         carte = new Carte(question.getText().toString(), answers.get(0), b1);
                         Toast.makeText(context, text, duration).show();
                     }
