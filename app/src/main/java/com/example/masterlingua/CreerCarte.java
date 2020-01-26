@@ -68,19 +68,20 @@ public class CreerCarte extends AppCompatActivity {
                     // construire la carte avec le bon nombre de réponses en argument
                     CharSequence text = getText(R.string.card_created);
                     int duration = Toast.LENGTH_SHORT;
-                    System.out.println(answers.size());
                     if (answers.size() == 3) {
                         carte = new Carte(question.getText().toString(), answers.get(0), b1, answers.get(1), b2, answers.get(2), b3);
                         Toast.makeText(context, text, duration).show();
-                        answers.removeAll(ArrayList<>());
+                        answers.removeAll(answers);
                     }
                     if (answers.size() == 2) {
                         carte = new Carte(question.getText().toString(), answers.get(0), b1, answers.get(1), b2);
                         Toast.makeText(context, text, duration).show();
+                        answers.removeAll(answers);
                     }
                     if (answers.size() == 1) {
                         carte = new Carte(question.getText().toString(), answers.get(0), b1);
                         Toast.makeText(context, text, duration).show();
+                        answers.removeAll(answers);
                     }
                     if (answers.isEmpty()) {
                         carte = new Carte(question.getText().toString());
