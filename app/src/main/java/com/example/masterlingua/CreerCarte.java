@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -17,6 +18,7 @@ import java.util.List;
 
 public class CreerCarte extends AppCompatActivity {
     private Carte carte;
+    private Spinner spinner1, spinner2;
     private EditText question;
     private List<String> answers;
     private boolean b1, b2, b3;
@@ -30,6 +32,8 @@ public class CreerCarte extends AppCompatActivity {
         question = findViewById(R.id.question);
         answers = new ArrayList<>();
         Button validate = findViewById(R.id.validate);
+        spinner1 = findViewById(R.id.languagesList1);
+        spinner2 = findViewById(R.id.languagesList2);
 
         validate.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -68,23 +72,25 @@ public class CreerCarte extends AppCompatActivity {
                     // construire la carte avec le bon nombre de réponses en argument
                     CharSequence text = getText(R.string.card_created);
                     int duration = Toast.LENGTH_SHORT;
+                    String s1 = String.valueOf(spinner1.getSelectedItem());
+                    String s2 = String.valueOf(spinner2.getSelectedItem());
                     if (answers.size() == 3) {
-                        carte = new Carte(question.getText().toString(), answers.get(0), b1, answers.get(1), b2, answers.get(2), b3);
+                        carte = new Carte(s1, s2, question.getText().toString(), answers.get(0), b1, answers.get(1), b2, answers.get(2), b3);
                         Toast.makeText(context, text, duration).show();
                         answers.removeAll(answers);
                     }
                     if (answers.size() == 2) {
-                        carte = new Carte(question.getText().toString(), answers.get(0), b1, answers.get(1), b2);
+                        carte = new Carte(s1, s2, question.getText().toString(), answers.get(0), b1, answers.get(1), b2);
                         Toast.makeText(context, text, duration).show();
                         answers.removeAll(answers);
                     }
                     if (answers.size() == 1) {
-                        carte = new Carte(question.getText().toString(), answers.get(0), b1);
+                        carte = new Carte(s1, s2, question.getText().toString(), answers.get(0), b1);
                         Toast.makeText(context, text, duration).show();
                         answers.removeAll(answers);
                     }
                     if (answers.isEmpty()) {
-                        carte = new Carte(question.getText().toString());
+                        carte = new Carte(s1, s2, question.getText().toString());
                         Toast.makeText(context, text, duration).show();
                     }
                 }
