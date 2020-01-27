@@ -16,6 +16,7 @@ android:
     - '.+'
 language: java
 
+dist: trusty
 jdk:
   - oraclejdk8
 
@@ -38,3 +39,5 @@ cache:
 after_success:
   - bash <(curl -s https://codecov.io/bash)
   - ./gradlew cobertura coveralls
+  
+  
