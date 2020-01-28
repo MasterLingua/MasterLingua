@@ -11,20 +11,20 @@ Une application ludique pour apprendre des langues en favorisant le contact huma
 
 ## Le principe:
 
-    Mettre en relation deux personnes qui veulent respectivement apprendre la langue maîtrisée par l'autre.
+Mettre en relation deux personnes qui veulent respectivement apprendre la langue maîtrisée par l'autre.
 
-    L'application se présente sous forme de jeu auquel ont joue grâce a des cartes.
+L'application se présente sous forme de jeu auquel ont joue grâce a des cartes.
 
-    Ces cartes peuvent être créées par un usagers.
+Ces cartes peuvent être créées par un usagers.
 
-    Les cartes comporte une question dans la langue maîtrisée avec soit 3 réponses, dont une correcte, dans la langue qu'on veut apprendre, soit aucune réponse et c'est au joueur d'écrire sa propre réponse.
+Les cartes comporte une question dans la langue maîtrisée avec soit 3 réponses, dont une correcte, dans la langue qu'on veut apprendre, soit aucune réponse et c'est au joueur d'écrire sa propre réponse.
 
-    Les réponses peuvent être des mots ou bien des images.
+Les réponses peuvent être des mots ou bien des images.
 
 ## Installation 
-    Telecharger git
+Telecharger git
     
-    Telecharger Android Studio
+Telecharger Android Studio
 
 ## Lancé l'application 
-    Grâce à l'émulateur d'Android Studio
+Grâce à l'émulateur d'Android Studio
