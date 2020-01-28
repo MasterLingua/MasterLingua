@@ -26,5 +26,5 @@ Telecharger git
     
 Telecharger Android Studio
 
-## Lancé l'application 
+## Lancer l'application 
 Grâce à l'émulateur d'Android Studio
