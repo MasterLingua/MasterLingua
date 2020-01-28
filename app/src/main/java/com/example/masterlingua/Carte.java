@@ -59,6 +59,10 @@ public class Carte {
         this.langueQuestion = langueQuestion;
     }
 
+    public void ajoutReponse(String s, Boolean b){
+        reponses.put(s,b);
+    }
+
     public void setLangueReponse(String langueReponse) {
         this.langueReponse = langueReponse;
     }
