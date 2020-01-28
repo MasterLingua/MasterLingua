@@ -2,6 +2,8 @@
 [![Apache-2.0 license](https://img.shields.io/github/license/pascalpoizat/veca-haskell.svg)](LICENSE)
 [![Build Status](https://travis-ci.com/AmelieALLIN/MasterLingua.svg?branch=master)](https://travis-ci.com/AmelieALLIN/MasterLingua)
 [![Version](https://img.shields.io/github/tag/AmelieALLIN/MasterLingua.svg?label=version&style=flat-square)](build.gradle)<br/>
+[![SonarCloud Quality Gate](https://sonarcloud.io/api/project_badges/measure?project=masterlingua%3Atemplate-java-project&metric=alert_status)](https://sonarcloud.io/dashboard?id=masterlingua%3Atemplate-java-project)
+[![SonarCloud Coverage](https://sonarcloud.io/api/project_badges/measure?project=masterlingua%3Atemplate-java-project&metric=coverage)](https://sonarcloud.io/dashboard?id=masterlingua%3Atemplate-java-project)
 
 # MasterLingua: 
 Une application pour apprendre les langues.
