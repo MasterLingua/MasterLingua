@@ -43,7 +43,7 @@ after_success:
   sonarcloud:
     organization: "MasterLingua" # the key of the org you chose at step #3
     token:
-      secure: ade4a2d66dc4fd53824d593a2f6d738a254368c2
+      secure: 0afcbd74ddd28cbd04761db14249884079c0d2bd
 script:
   # other script steps might be done before running the actual analysis
   - sonar-scanner
