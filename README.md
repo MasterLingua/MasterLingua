@@ -3,13 +3,13 @@
 [![Build Status](https://travis-ci.com/AmelieALLIN/MasterLingua.svg?branch=master)](https://travis-ci.com/AmelieALLIN/MasterLingua)
 [![Version](https://img.shields.io/github/tag/AmelieALLIN/MasterLingua.svg?label=version&style=flat-square)](build.gradle)<br/>
 
-MasterLingua: 
+# MasterLingua: 
 Une application pour apprendre les langues.
 
-Qu'est ce que c'est ?
+## Qu'est ce que c'est ?
 Une application ludique pour apprendre des langues en favorisant le contact humain et l'utilisation des connaissances de chacun. Développé sous Android, MasterLingua est une application sur smartphone.
 
-Le principe:
+## Le principe:
 
     Mettre en relation deux personnes qui veulent respectivement apprendre la langue maîtrisée par l'autre.
 
@@ -21,10 +21,10 @@ Le principe:
 
     Les réponses peuvent être des mots ou bien des images.
 
-Installation 
+## Installation 
     Telecharger git
     
     Telecharger Android Studio
 
-Lancé l'application 
+## Lancé l'application 
     Grâce à l'émulateur d'Android Studio
