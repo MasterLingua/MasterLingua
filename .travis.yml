@@ -41,10 +41,10 @@ after_success:
   - ./gradlew cobertura coveralls
   addons:
   sonarcloud:
-    organization: "MasterLingua" # the key of the org you chose at step #3
+    organization: "masterlingua"" # the key of the org you chose at step #3
     token:
       secure: 0afcbd74ddd28cbd04761db14249884079c0d2bd
 script:
   # other script steps might be done before running the actual analysis
-  - sonar-scanner
-  
+  #- sonar-scanner
+  - ./gradlew sonarqube
