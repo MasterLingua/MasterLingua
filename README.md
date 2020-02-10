@@ -1,4 +1,5 @@
 # MasterLingua
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/24b85a5d7f3844ce879316121b9bb481)](https://app.codacy.com/gh/MasterLingua/MasterLingua?utm_source=github.com&utm_medium=referral&utm_content=MasterLingua/MasterLingua&utm_campaign=Badge_Grade_Dashboard)
 [![Apache-2.0 license](https://img.shields.io/github/license/pascalpoizat/veca-haskell.svg)](LICENSE)
 [![Build Status](https://travis-ci.com/AmelieALLIN/MasterLingua.svg?branch=master)](https://travis-ci.com/AmelieALLIN/MasterLingua)
 [![Version](https://img.shields.io/github/tag/AmelieALLIN/MasterLingua.svg?label=version&style=flat-square)](build.gradle)<br/>
